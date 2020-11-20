@@ -15,14 +15,14 @@ export default {
     this.loading = true;
     this.microApp = loadMicroApp(
       {
-        name: 'za-castle-radar', entry: 'https://radar-test.zhonganonline.com/', container: this.$refs.tmReportContainer1,
+        name: 'xxx-castle-xxxx', entry: 'https://xxx-test.xxxx.com/', container: this.$refs.tmReportContainer1,
         props: {
           data: {
             projectId: this.$route.params.projectId,
-            adAccount:'jingqingchao',
-            email: 'jingqingchao@zhongan.com',
-            departmentId:12,
-            name: 'jingqingchao'
+            adAccount:'xxxx',
+            email: 'xxx@xxx.com',
+            departmentId:2312,
+            name: 'xxxx'
           }
         }
       },

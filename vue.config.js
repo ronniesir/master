@@ -1,12 +1,10 @@
 module.exports = {
-  productionSourceMap: false,
-  outputDir: "dist",
-  assetsDir: "static",
+  transpileDependencies: ['single-spa','qiankun','import-html-entry'],
   devServer: {
     port:8080,
     proxy: {
-      '/radar': {
-        target: 'http://za-castle-radar.test.za.biz',
+      '/**': {
+        target: 'http://xxxxxx',
         changeOrigin: true,
         secure: false
       }

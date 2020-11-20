@@ -8,7 +8,7 @@
 import {  start } from "qiankun";
 export default {
   mounted(){
-    window.sub1Title="我是主应用window的标题"
+
     start();
   }
 }

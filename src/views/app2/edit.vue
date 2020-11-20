@@ -1,18 +1,26 @@
 <template>
   <div>
-    <B>子应用二富文本编辑器{{tag}}</B>
+    <B>子应用二富文本编辑器{{tag}}-----{{$route.fullPath}}</B>
 
     <div id="contentView2"></div>
   </div>
 </template>
 <script>
-import { start } from "qiankun";
+import { registerMicroApps, start } from "qiankun";
 export default {
   mounted () {
-      start();
+    registerMicroApps([
+      {
+        name: 'sub-app-2',
+        entry: '//localhost:7070',
+        container: '#contentView2',
+        activeRule: '/sub2',
+        props: {}
+      }])
+    start();   
   },
-  computed:{
-    tag(){
+  computed: {
+    tag () {
       return new Date();
     }
   }
